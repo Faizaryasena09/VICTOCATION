@@ -1,0 +1,9 @@
+{
+  "name": "victocation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website Resmi Angkatan 19 VICTOCATION Bina Umat",
+  "engines": {
+    "node": "24.x"
+  }
+}
