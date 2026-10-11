@@ -1,24 +1,43 @@
-.logoheader {
-    background-color: #0463FA;
-    border-radius: 10px 10px 10px 10px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;700;800;900&display=swap');
 
 :root {
-    --primary: #0463FA;
-    --light: #EFF5FF;
-    --dark: #1B2C51;
+    --primary: #1d4ed8;
+    --primary-light: #3b82f6;
+    --primary-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+    --accent: #f59e0b;
+    --light: #f8fafc;
+    --light-blue: #eff6ff;
+    --dark: #0f172a;
+    --dark-surface: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    --card-shadow-hover: 0 20px 30px -10px rgba(29, 78, 216, 0.15), 0 10px 15px -5px rgba(15, 23, 42, 0.08);
 }
 
-.fw-medium {
-    font-weight: 500 !important;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+    overflow-x: hidden;
 }
 
-.fw-bold {
-    font-weight: 700 !important;
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
 }
 
-.fw-black {
-    font-weight: 900 !important;
+.logoheader {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    padding: 6px 12px;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.logoheader:hover {
+    transform: scale(1.05);
 }
 
 .back-to-top {
@@ -519,4 +538,324 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+/* ========================================================
+   MODERN UI ENHANCEMENTS FOR VICTOCATION
+   ======================================================== */
+
+/* Navbar Glassmorphism */
+.navbar {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.navbar .navbar-brand h1 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.navbar .navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-gradient);
+    border-radius: 3px;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 12px !important;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .dropdown-item {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 16px;
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: var(--light-blue);
+    color: var(--primary);
+    transform: translateX(4px);
+}
+
+/* Hero Section */
+.hero-gradient-bg {
+    background: radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(29, 78, 216, 0.2) 0%, transparent 40%),
+                linear-gradient(135deg, #090e17 0%, #0f1e36 45%, #1e3a8a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #e0f2fe;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding: 6px 16px;
+    border-radius: 50px;
+}
+
+.hero-stats-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    padding: 20px 24px;
+    transition: all 0.3s ease;
+}
+
+.hero-stats-card:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-4px);
+}
+
+.hero-stat-number {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background: #ffffff;
+    color: var(--primary);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Section Badges */
+.badge-pill-soft {
+    background: #eff6ff;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    border: 1px solid #bfdbfe;
+    display: inline-block;
+}
+
+/* Binaan Spotlight Card */
+.spotlight-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.spotlight-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-5px);
+}
+
+.spotlight-img-wrap {
+    position: relative;
+    overflow: hidden;
+    max-height: 520px;
+}
+
+.spotlight-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.spotlight-card:hover .spotlight-img-wrap img {
+    transform: scale(1.03);
+}
+
+.spotlight-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
+    padding: 30px;
+    color: #ffffff;
+}
+
+.spotlight-quote-box {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 24px 28px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+    position: relative;
+}
+
+/* Service / Feature Modern Cards */
+.feature-card-modern {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card-modern:hover {
+    border-color: #bfdbfe;
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-8px);
+}
+
+.icon-box-modern {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--light-blue);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease;
+}
+
+.feature-card-modern:hover .icon-box-modern {
+    background: var(--primary-gradient);
+    color: #ffffff;
+    transform: scale(1.08) rotate(3deg);
+}
+
+/* Catur Sukses 4 Pillars */
+.catur-pillar-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-top: 4px solid var(--primary);
+}
+
+.catur-pillar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.catur-pillar-card.akhlak { border-top-color: #10b981; }
+.catur-pillar-card.tahfidz { border-top-color: #0284c7; }
+.catur-pillar-card.karakter { border-top-color: #f59e0b; }
+.catur-pillar-card.akademik { border-top-color: #8b5cf6; }
+
+/* Video Showcase Cards */
+.video-card-modern {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e2e8f0;
+    transition: all 0.35s ease;
+}
+
+.video-card-modern:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-shadow-hover);
+    border-color: #bfdbfe;
+}
+
+.video-wrapper-16-9 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: #0f172a;
+}
+
+.video-wrapper-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Back to Top */
+.back-to-top {
+    background: var(--primary-gradient);
+    border: none;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+}
+
+/* Footer polish */
+.footer {
+    background: linear-gradient(180deg, #0f172a 0%, #090d16 100%) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }

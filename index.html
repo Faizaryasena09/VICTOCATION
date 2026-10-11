@@ -16,7 +16,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -46,68 +46,93 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img class="logoheader" src="Data/logo.png" width="100" height="60">
-            <h1 class="m-0 text-primary"><i class="me-3"></i>VICTOCATION</h1>
+            <img class="logoheader me-3" src="Data/logo.png" width="90" height="50" alt="Victocation Logo">
+            <h1 class="m-0 text-primary">VICTOCATION</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+            <div class="navbar-nav ms-auto p-4 p-lg-0 align-items-lg-center">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PAGES</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="index.html" class="dropdown-item">Home</a>
-                    <a href="https://loginarya.vercel.app/login" class="dropdown-item">Foto-foto</a>
-                     <a href="Video.html" class="dropdown-item">Video VCT</a>
-                    <a href="https://loginarya.vercel.app/login" class="dropdown-item">Data angkatan</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Halaman</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="index.html" class="dropdown-item"><i class="fas fa-home me-2 text-primary"></i>Home</a>
+                        <a href="about.html" class="dropdown-item"><i class="fas fa-info-circle me-2 text-primary"></i>Tentang Kami</a>
+                        <a href="Video.html" class="dropdown-item"><i class="fas fa-play-circle me-2 text-primary"></i>Video VCT</a>
+                        <a href="login1.html" class="dropdown-item"><i class="fas fa-images me-2 text-primary"></i>Foto & Galeri</a>
+                        <a href="https://loginarya.vercel.app/login" target="_blank" class="dropdown-item"><i class="fas fa-user-friends me-2 text-primary"></i>Data Angkatan</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-item nav-link">Tentang</a>
+                <a href="Video.html" class="nav-item nav-link">Video</a>
+                <div class="px-4 py-2 py-lg-0">
+                    <a href="login1.html" class="btn btn-primary rounded-pill py-2 px-4 d-inline-flex align-items-center">
+                        <i class="fas fa-sign-in-alt me-2"></i>Masuk Galeri
+                    </a>
                 </div>
             </div>
-                <a href="about.html" class="nav-item nav-link">ABOUT</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="container-fluid header bg-primary p-0 mb-5">
-        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
-            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5">VICTOCATION IS VICTORIOUS VINDICATION</h1>
-                <div class="row g-4">
-                    <div class="col-sm-4">
-                        <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">79</h2>
-                            <p class="text-light mb-0">STUDENTS</p>
-                        </div>
+    <!-- Header / Hero Start -->
+    <div class="container-fluid hero-gradient-bg p-0 mb-5 text-white">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center py-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <span class="hero-badge mb-3">
+                        <i class="fas fa-shield-alt text-warning"></i> OFFICIAL WEBSITE • ANGKATAN 19 BINA UMAT
+                    </span>
+                    <h1 class="display-4 text-white fw-bold mb-3" style="line-height: 1.15;">
+                        VICTOCATION IS <span style="background: linear-gradient(135deg, #60a5fa, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">VICTORIOUS VINDICATION</span>
+                    </h1>
+                    <p class="lead text-light opacity-75 mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+                        Satu rasa, satu perjuangan. Wadah silaturahmi dan memori emas santri Angkatan 19 Pondok Pesantren Bina Umat Sleman — Mempertahankan kemenangan dan persaudaraan sejati.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="#tentang" class="btn btn-primary rounded-pill py-3 px-4 fw-bold">
+                            <i class="fas fa-compass me-2"></i>Jelajahi Angkatan
+                        </a>
+                        <a href="Video.html" class="btn btn-outline-custom rounded-pill py-3 px-4 fw-bold">
+                            <i class="fas fa-play-circle me-2"></i>Tonton Video
+                        </a>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">19</h2>
-                            <p class="text-light mb-0">TH GENERATION</p>
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <div class="hero-stats-card text-center">
+                                <div class="hero-stat-number" data-toggle="counter-up">79</div>
+                                <div class="text-light opacity-75 small fw-bold mt-1">SANTRI PEJUANG</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="hero-stats-card text-center">
+                                <div class="hero-stat-number" data-toggle="counter-up">19</div>
+                                <div class="text-light opacity-75 small fw-bold mt-1">TH GENERATION</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="hero-stats-card text-center">
+                                <div class="hero-stat-number" data-toggle="counter-up">4</div>
+                                <div class="text-light opacity-75 small fw-bold mt-1">CATUR SUKSES</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="owl-carousel header-carousel">
-                    <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/FOTO1.JPG" alt="">
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0"></h1>
-                        </div>
-                    </div>
-                    <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/FOTO2.JPG" alt="">
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0"></h1>
-                        </div>
-                    </div>
-                    <div class="owl-carousel-item position-relative">
-                        <img class="img-fluid" src="img/FOTO3.jpg" alt="">
-                        <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0"></h1>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="position-relative p-2 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="owl-carousel header-carousel rounded-4 overflow-hidden">
+                            <div class="owl-carousel-item position-relative">
+                                <img class="img-fluid rounded-4" src="img/FOTO1.JPG" alt="Victocation Moment 1" style="max-height: 460px; object-fit: cover;">
+                            </div>
+                            <div class="owl-carousel-item position-relative">
+                                <img class="img-fluid rounded-4" src="img/FOTO2.JPG" alt="Victocation Moment 2" style="max-height: 460px; object-fit: cover;">
+                            </div>
+                            <div class="owl-carousel-item position-relative">
+                                <img class="img-fluid rounded-4" src="img/FOTO3.jpg" alt="Victocation Moment 3" style="max-height: 460px; object-fit: cover;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,30 +141,105 @@
     </div>
     <!-- Header End -->
 
-    <!--content binaan start-->
-<div style="display: flex; justify-content: center; align-items: center; position: relative;">
-    <img src="img/BINAAN.JPG" alt="" style="max-width: 100%; height: auto;">
-</div>
-<div>
-    <h1 style="display: flex; justify-content: center; align-items: center; position: relative;">Engga pernah nyidang sekalinya nyidang SP2</h1>
-</div>
-<!--content binaan end-->
 
-    <!-- About Start -->
+    <!-- Spotlight / Binaan Section Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="img/about-1.jpg" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/about-2.jpg" alt="" style="margin-top: -25%;">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 650px;">
+                <span class="badge-pill-soft mb-2"><i class="fas fa-camera-retro me-2"></i>MOMEN & KENANGAN KHAS</span>
+                <h2 class="display-6 fw-bold">Kilas Balik Hari-Hari di Pondok</h2>
+                <p class="text-muted">Kisah kebersamaan yang penuh canda, perjuangan, dan cerita unik yang selalu dirindukan.</p>
+            </div>
+
+            <div class="spotlight-card wow fadeInUp" data-wow-delay="0.2s">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="spotlight-img-wrap">
+                            <img src="img/BINAAN.JPG" alt="Santri Victocation Binaan">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 p-4 p-md-5">
+                        <div class="d-inline-flex align-items-center text-primary mb-3">
+                            <i class="fas fa-quote-left fs-1 me-3 opacity-50"></i>
+                            <span class="fw-bold text-uppercase tracking-wider small">Memori Ikonik Santri</span>
+                        </div>
+                        <h3 class="fw-bold text-dark mb-3" style="line-height: 1.3;">
+                            "Engga pernah nyidang, sekalinya nyidang langsung SP2!"
+                        </h3>
+                        <p class="text-secondary mb-4" style="line-height: 1.7;">
+                            Setiap sudut asrama dan kelas menyimpan tawa, taktik ngeles, dan momen persaudaraan yang tak ternilai harganya. Walau penuh aturan dan dinamika, inilah tempat karakter kami dibentuk hingga menjadi pribadi tangguh.
+                        </p>
+                        <div class="d-flex align-items-center pt-2 border-top">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px;">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Angkatan 19 • VICTOCATION</h6>
+                                <small class="text-muted">Pondok Pesantren Bina Umat Sleman</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">SEDIKIT DARI KAMI</p>
-                    <h1 class="mb-4">Apa itu "VICTOCATION"?</h1>
-                    <p>"VICTOCATION" adalah nama angkatan ke-19 yang berada di pondok pesantren BINA UMAT SLEMAN. </p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="about.html">BACA LAGI</a>
+            </div>
+        </div>
+    </div>
+    <!-- Spotlight / Binaan Section End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="tentang">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="position-relative">
+                        <div class="d-flex flex-column">
+                            <img class="img-fluid rounded-4 shadow-sm w-75 align-self-end" src="img/about-1.jpg" alt="About Victocation 1">
+                            <img class="img-fluid rounded-4 shadow-lg w-50 bg-white p-2" src="img/about-2.jpg" alt="About Victocation 2" style="margin-top: -25%; border: 3px solid #ffffff;">
+                        </div>
+                        <div class="position-absolute bg-primary text-white p-3 rounded-4 shadow d-none d-sm-block" style="bottom: -15px; left: 10px;">
+                            <div class="fw-bold fs-5">Bina Umat</div>
+                            <small>Moyudan, Sleman, DIY</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                    <span class="badge-pill-soft mb-2"><i class="fas fa-info-circle me-2"></i>SEJARAH SINGKAT</span>
+                    <h2 class="display-6 fw-bold mb-4">Apa Itu <span class="text-primary">"VICTOCATION"</span>?</h2>
+                    <p class="text-secondary lead mb-3" style="font-size: 1.05rem;">
+                        <strong>VICTOCATION</strong> adalah identitas kebanggaan bagi <strong>Angkatan ke-19</strong> di Pondok Pesantren Bina Umat Sleman, Yogyakarta.
+                    </p>
+                    <p class="text-muted mb-4" style="line-height: 1.8;">
+                        Berasal dari kalimat <em>"Victorious Vindication"</em> yang bermakna <strong>"Mempertahankan Kemenangan"</strong>. Dari awal berjumlah 100 santri, sebanyak 79 santri terus bertahan berjuang mengarungi ujian, membentuk solidaritas persaudaraan yang tak akan pudar.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fs-5 me-2"></i>
+                                <span class="fw-semibold">Kompak & Solid</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fs-5 me-2"></i>
+                                <span class="fw-semibold">Catur Sukses Santri</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fs-5 me-2"></i>
+                                <span class="fw-semibold">Karakter Tangguh</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fs-5 me-2"></i>
+                                <span class="fw-semibold">Memori Tak Terganti</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">
+                        <i class="fas fa-book-open me-2"></i>BACA KISAH LENGKAP
+                    </a>
                 </div>
             </div>
         </div>
@@ -147,42 +247,55 @@
     <!-- About End -->
 
 
-    <!-- tambahan1 Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
+    <!-- tambahan1 / Showcase Features Start -->
+    <div class="container-xxl py-5 bg-light-blue rounded-4 my-5">
+        <div class="container py-4">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">LAINNYA</p>
-                <h1>Dari VICTOCATION</h1>
+                <span class="badge-pill-soft mb-2"><i class="fas fa-th-large me-2"></i>EKSPLORASI</span>
+                <h2 class="display-6 fw-bold">Dari Kami Untuk Semua</h2>
+                <p class="text-muted">Jelajahi berbagai dokumentasi, penghormatan kepada guru, dan arsip kenangan.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa-readme text-primary fs-4"></i>
+                    <div class="feature-card-modern">
+                        <div class="icon-box-modern">
+                            <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <h4 class="mb-3">Guru - Guru kami</h4>
-                        <p class="mb-4">Guru/ustadz/ustadzah kami</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lihat</a>
+                        <h4 class="fw-bold mb-3">Guru & Asatidz Kami</h4>
+                        <p class="text-muted mb-4 flex-grow-1">
+                            Ungkapan terima kasih tak terhingga kepada para asatidz dan ustadzah yang telah mendidik kami dengan penuh kesabaran dan keikhlasan.
+                        </p>
+                        <a class="btn btn-outline-primary rounded-pill px-4 py-2 mt-auto align-self-start" href="about.html">
+                            <i class="fas fa-arrow-right me-2"></i>Pelajari Lebih Lanjut
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa-readme text-primary fs-4"></i>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-card-modern">
+                        <div class="icon-box-modern">
+                            <i class="fas fa-video"></i>
                         </div>
-                        <h4 class="mb-3">Video</h4>
-                        <p class="mb-4">Video kami selama di Bina Umat Mulia Abadi</p>
-                        <a class="btn" href="Video.html"><i class="fa fa-plus text-primary me-3"></i>Lihat</a>
+                        <h4 class="fw-bold mb-3">Video & Sinematik</h4>
+                        <p class="text-muted mb-4 flex-grow-1">
+                            Kumpulan video dokumenter, rewind, teater, dan klip keseruan masa santri kami selama di Bina Umat Mulia Abadi.
+                        </p>
+                        <a class="btn btn-primary rounded-pill px-4 py-2 mt-auto align-self-start text-white" href="Video.html">
+                            <i class="fas fa-play me-2"></i>Tonton Video
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa-readme text-primary fs-4"></i>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-card-modern">
+                        <div class="icon-box-modern">
+                            <i class="fas fa-images"></i>
                         </div>
-                        <h4 class="mb-3">Video</h4>
-                        <p class="mb-4">Video kami selama di Bina Umat Mulia Abadi</p>
-                        <a class="btn" href="Video.html"><i class="fa fa-plus text-primary me-3"></i>Lihat</a>
+                        <h4 class="fw-bold mb-3">Galeri & Foto Angkatan</h4>
+                        <p class="text-muted mb-4 flex-grow-1">
+                            Ribuan momen foto kebersamaan, kegiatan pesantren, ujian tahfidz, dan kebersamaan santri dari awal hingga wisuda.
+                        </p>
+                        <a class="btn btn-outline-primary rounded-pill px-4 py-2 mt-auto align-self-start" href="login1.html">
+                            <i class="fas fa-camera me-2"></i>Buka Galeri
+                        </a>
                     </div>
                 </div>
             </div>
@@ -191,66 +304,72 @@
     <!-- tambahan1 End -->
 
 
-    <!-- tambahan2 Start -->
-    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+    <!-- tambahan2 / Nilai Angkatan Start -->
+    <div class="container-fluid hero-gradient-bg overflow-hidden my-5 px-lg-0 text-white">
         <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
+            <div class="row g-0 mx-lg-0 align-items-center">
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="p-lg-5 ps-lg-0">
-                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">SEDIKIT LAGI DARI KAMI</p>
-                        <h1 class="text-white mb-4">Kenapa namanya harus "VICTOCATION"?</h1>
-                        <p class="text-white mb-4 pb-2">Karena "VICTOCATION" sendiri mempunya arti yaitu KEMENANGAN, "VICTOCATION" juga memiliki kepanjangan yaitu "victorious vindication" yang berarti "Mempertahankan kemenangan"</p>
+                        <span class="hero-badge mb-3">
+                            <i class="fas fa-star text-warning"></i> NILAI KEBANGGAAN
+                        </span>
+                        <h2 class="display-6 fw-bold text-white mb-3">
+                            Mengapa Bernama <span class="text-info">"VICTOCATION"</span>?
+                        </h2>
+                        <p class="text-light opacity-75 mb-4 pb-2" style="line-height: 1.7;">
+                            Nama <strong>VICTOCATION</strong> lahir dari cita-cita luhur: <em>"Victorious Vindication"</em> — tekad untuk mempertahankan kemenangan moral, akhlak, dan prestasi santri di tengah tantangan zaman.
+                        </p>
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-user-md text-primary"></i>
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white text-primary shadow-sm" style="width: 55px; height: 55px;">
+                                        <i class="fas fa-users fs-5"></i>
                                     </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">ORANG-ORANG</p>
-                                        <h5 class="text-white mb-0">BAIK SEMUA</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-check text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">AKHLAK</p>
-                                        <h5 class="text-white mb-0">BAGUS</h5>
+                                    <div class="ms-3">
+                                        <small class="text-light opacity-75 d-block text-uppercase">Persaudaraan</small>
+                                        <h6 class="text-white fw-bold mb-0">Semua Berjiwa Baik</h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white text-primary shadow-sm" style="width: 55px; height: 55px;">
+                                        <i class="fas fa-quran fs-5"></i>
                                     </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">SOLIDARITAS</p>
-                                        <h5 class="text-white mb-0">KUAT</h5>
+                                    <div class="ms-3">
+                                        <small class="text-light opacity-75 d-block text-uppercase">Karakter</small>
+                                        <h6 class="text-white fw-bold mb-0">Akhlak Terpuji</h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-headphones text-primary"></i>
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white text-primary shadow-sm" style="width: 55px; height: 55px;">
+                                        <i class="fas fa-shield-alt fs-5"></i>
                                     </div>
-                                    <div class="ms-4">
-                                        <p class="text-white mb-2">YEL-TEL</p>
-                                        <h5 class="text-white mb-0">BANYAK</h5>
+                                    <div class="ms-3">
+                                        <small class="text-light opacity-75 d-block text-uppercase">Persatuan</small>
+                                        <h6 class="text-white fw-bold mb-0">Solidaritas Kuat</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white text-primary shadow-sm" style="width: 55px; height: 55px;">
+                                        <i class="fas fa-bullhorn fs-5"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <small class="text-light opacity-75 d-block text-uppercase">Kompak</small>
+                                        <h6 class="text-white fw-bold mb-0">Yel-Yel Semangat</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.4s" style="min-height: 440px;">
+                    <div class="position-relative h-100 p-4">
+                        <img class="img-fluid rounded-4 shadow-lg w-100 h-100" src="img/feature.jpg" style="object-fit: cover; max-height: 480px;" alt="Kebersamaan Victocation">
                     </div>
                 </div>
             </div>
@@ -263,34 +382,50 @@
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">ALAMAT</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pondok pesantren Bina Umat Moyudan, Sleman, yogyakarta</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">LAIN-LAIN</h5>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="https://loginarya.vercel.app/login">Foto-foto</a>
-                    <a class="btn btn-link" href="https://www.binaumat.com/">Related (Ponpes Bina Umat)</a>
-                    <a class="btn btn-link" href="https://mutabaah.binaumatapps.com/login">Mutabaah Bina Umat</a>
-                </div>       
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">FOLLOW US</h5>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="logoheader me-3" src="Data/logo.png" width="80" height="45" alt="Victocation Logo">
+                        <h4 class="text-white mb-0 fw-bold">VICTOCATION</h4>
+                    </div>
+                    <p class="text-light opacity-75 mb-4" style="line-height: 1.7;">
+                        Victorious Vindication — Angkatan ke-19 Pondok Pesantren Bina Umat Sleman, Yogyakarta. Mengukir prestasi, menjaga adab, dan merawat persaudaraan sejati.
+                    </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://www.instagram.com/victocation.19?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle me-2" href="https://www.instagram.com/victocation.19?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram Victocation"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle me-2" href="Video.html" title="Video Dokumenter"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://github.com/Faizaryasena09" target="_blank" title="GitHub Aryasena"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4 fw-bold"><i class="fas fa-map-marker-alt text-primary me-2"></i>LOKASI KAMI</h5>
+                    <p class="text-light opacity-75 mb-3">
+                        Pondok Pesantren Bina Umat<br>
+                        Moyudan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55563
+                    </p>
+                    <a class="text-info text-decoration-none small" href="https://www.binaumat.com/" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i>Kunjungi Website Resmi Bina Umat
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4 fw-bold"><i class="fas fa-link text-primary me-2"></i>NAVIGASI CEPAT</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a class="btn btn-link" href="index.html">Beranda</a>
+                        <a class="btn btn-link" href="about.html">Tentang Victocation</a>
+                        <a class="btn btn-link" href="Video.html">Video Dokumenter</a>
+                        <a class="btn btn-link" href="login1.html">Galeri & Foto Santri</a>
+                        <a class="btn btn-link" href="https://mutabaah.binaumatapps.com/login" target="_blank">Mutabaah Bina Umat</a>
                     </div>
                 </div>       
             </div>
         </div>
         <div class="container">
             <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">VICTOCATION</a>, All Right Reserved.
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-light opacity-75">
+                        &copy; <strong>VICTOCATION</strong> • All Rights Reserved. Angkatan 19 Bina Umat.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://github.com/Faizaryasena09">Aryasena</a>
+                    <div class="col-md-6 text-center text-md-end text-light opacity-75">
+                        Didesain & Dikembangkan oleh <a class="text-white border-bottom fw-bold" href="https://github.com/Faizaryasena09" target="_blank">Aryasena</a>
                     </div>
                 </div>
             </div>

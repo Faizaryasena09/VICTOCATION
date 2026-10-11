@@ -1,37 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Buka</title>
+    <title>Akses Diberikan - Galeri VICTOCATION</title>
+    <link rel="shortcut icon" href="Data/logo.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body{
-    background-color: #080710;
-}
-        button{
-        font-family: sans-serif;
-        font-size: 15px;
-        background: #22a4cf;
-        color: white;
-        border: white 3px solid;
-        border-radius: 5px;
-        padding: 12px 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        justify-content: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
-        
-        button:hover{
-        opacity:0.9;
+        body {
+            background: radial-gradient(circle at 50% 30%, #1e3a8a 0%, #090e17 70%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #ffffff;
         }
-        </style>
+        .access-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 40px 32px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.6s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .icon-badge {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+        .btn-drive {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-drive:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.5);
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 18px;
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .btn-back:hover {
+            color: #93c5fd;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <a href="https://drive.google.com/drive/folders/1QP3XzSKyRByBH3RcIdsL3ZYPVOgC7T_v?usp=drive_link" target="_blank">
-            <button class="button">Buka</button></a>
-    </center>
+    <div class="access-card">
+        <div class="icon-badge">
+            <i class="fas fa-check"></i>
+        </div>
+        <h2>Akses Terverifikasi!</h2>
+        <p>Selamat datang di arsip dokumen & foto angkatan 19 VICTOCATION Bina Umat. Klik tombol di bawah untuk membuka Google Drive.</p>
+        <a href="https://drive.google.com/drive/folders/1QP3XzSKyRByBH3RcIdsL3ZYPVOgC7T_v?usp=drive_link" target="_blank" class="btn-drive">
+            <i class="fab fa-google-drive"></i> Buka Google Drive
+        </a>
+        <div>
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </div>
 </body>
 </html>
